@@ -1,4 +1,4 @@
-devolpment:
+development:
   adapter: postgresql
   database: tijuana_dev
   username: postgres
