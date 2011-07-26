@@ -5,7 +5,9 @@ gem 'rails', '3.0.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
+
+gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -33,7 +35,7 @@ gem 'sqlite3'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              '= 0.9.9.22'
+gem 'refinerycms',              '~>~>~>~>9.9.22'
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
