@@ -2,3 +2,25 @@
   <%= t('.copyright', :year => Time.now.year,
                       :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
 </p>
+
+<table width="100%">
+<tr>
+<td width="45%">
+</td>
+<td width="10%" align="center">
+Powered by
+</td>
+<td width="45%">
+</td>
+</tr>
+<td width="45%" align="right">
+<%= link_to image_tag('refinery-twitter-logo.png'), 'http://www.refinerycms.com' %>
+</td>
+<td width="10%" align="center">
+<%= link_to image_tag('rails.png'), 'http://www.rubyonrails.org' %>
+</td>
+<td width="45%" align="left">
+<%= link_to image_tag('heroku.png'), 'http://www.heroku.com' %>
+</td>
+</tr>
+</table>
