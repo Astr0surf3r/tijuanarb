@@ -1,6 +1,28 @@
 <p align="center">
   <%= link_to image_tag('tijuanarb.png'), root_path %>
 </p>
+<p align="center">
+<table width="100%">
+<tr>
+<td width="50%" align="right">
+<a target="_blank" title="http://www.twitter.com/tijuanarb" href="http://www.twitter.com/tijuanarb"><img src="https://s3.amazonaws.com/astr0/twitter.jpg" alt="Account Twitter" title="Account Twitter" /></a>
+</td>
+<td width="50%" align="left">
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone>
+
+<!-- Place this tag after the last plusone tag -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</td>
+</tr>
+</table>
+</p>
 <%= render(:partial => "/shared/menu", :locals => {
              :dom_id => 'menu',
              :css => 'menu'
