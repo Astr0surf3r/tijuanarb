@@ -1,1 +1,38 @@
-<%= render :partial => "/shared/content_page" %>
+<section id="body_content">
+<%=raw @page[:body] %>
+</section>
+
+<section id="side_body_content">
+
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 3,
+  interval: 6000,
+  width: 500,
+  height: 180,
+  theme: {
+    shell: {
+      background: '#ffbf00',
+      color: '#000000'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#ff0000'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    behavior: 'all'
+  }
+}).render().setUser('tijuanarb').start();
+</script>
+</section>
