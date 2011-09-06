@@ -176,8 +176,8 @@ PLATFORMS
 DEPENDENCIES
   pg
   rails (= 3.0.7)
-  refinerycms (= 1.0.0)
-  refinerycms-blog (~> 1.3)
+  refinerycms (~> 1.0.0)
+  refinerycms-blog (~> 1.5)
   refinerycms-events (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0)
