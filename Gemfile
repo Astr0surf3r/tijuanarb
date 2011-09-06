@@ -39,11 +39,11 @@ gem 'taps'
 
 gem 'refinerycms',              '= 1.0.0'
 
-group :development, :test do
+#group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
   # Then, run 'rails generate refinerycms_testing' which will copy its support files.
   # gem 'refinerycms-testing',    '~> 0.9.9.22'
-end
+#end
 
 # END REFINERY CMS ============================================================
 
