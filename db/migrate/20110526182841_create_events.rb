@@ -1,5 +1,7 @@
 class CreateEvents < ActiveRecord::Migration
 
+::Page.reset_column_information
+
   def self.up
     create_table :events do |t|
       t.string :title
