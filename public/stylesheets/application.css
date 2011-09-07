@@ -62,11 +62,22 @@
 #menu.clearfix ul li a:hover {
    background:#c00;
    color:#fff;
+
 }
+
 #menu.clearfix ul li a.active,
 #menu.clearfix ul li a.active:hover {
    background:#fff;
    color:#c00;
    font-weight:bold;
-
 }
+
+#comments.new_blog_comment {
+ margin: 0 auto;
+ display-block;
+ width: 45%;
+ background: white;
+ color: #000000;
+ padding: 20px;
+
+ }
