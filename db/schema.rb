@@ -10,13 +10,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110906175217) do
+ActiveRecord::Schema.define(:version => 20110907003516) do
 
   create_table "blog_categories", :force => true do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "cached_slug"
   end
 
   add_index "blog_categories", ["id"], :name => "index_blog_categories_on_id"
@@ -49,20 +48,43 @@ ActiveRecord::Schema.define(:version => 20110906175217) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
-    t.string   "cached_slug"
     t.string   "custom_url"
   end
 
   add_index "blog_posts", ["id"], :name => "index_blog_posts_on_id"
 
+  create_table "event_categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "cached_slug"
+  end
+
+  create_table "event_categorizations", :force => true do |t|
+    t.integer  "event_id"
+    t.integer  "event_category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "event_categorizations", ["event_category_id"], :name => "index_event_categorizations_on_event_category_id"
+  add_index "event_categorizations", ["event_id"], :name => "index_event_categorizations_on_event_id"
+
   create_table "events", :force => true do |t|
     t.string   "title"
-    t.datetime "date"
-    t.integer  "photo_id"
-    t.text     "blurb"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.string   "venue_name"
+    t.string   "venue_address"
+    t.decimal  "ticket_price",  :precision => 8, :scale => 2
+    t.string   "ticket_link"
+    t.text     "description"
+    t.boolean  "featured"
+    t.integer  "image_id"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "cached_slug"
   end
 
   add_index "events", ["id"], :name => "index_events_on_id"

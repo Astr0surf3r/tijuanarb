@@ -39,7 +39,7 @@ gem 'taps'
 
 gem 'refinerycms',              '~>1.0.0'
 
-gem 'refinerycms-events', '1.0', :path => 'vendor/engines' 
+#gem 'refinerycms-events', '1.0', :path => 'vendor/engines' 
 
 #group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
@@ -60,7 +60,7 @@ gem 'refinerycms-inquiries',    '~> 1.0'
 # gem 'refinerycms-search',       '~> 0.9.8'
 gem 'refinerycms-blog',         '~> 1.5'
 # gem 'refinerycms-page-images',  '~> 1.0'
-
+gem 'refinerycms-calendar', '~>1.1.0'
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 1.0.0'
 

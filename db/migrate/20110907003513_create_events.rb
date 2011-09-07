@@ -1,13 +1,17 @@
 class CreateEvents < ActiveRecord::Migration
 
-::Page.reset_column_information
-
   def self.up
     create_table :events do |t|
       t.string :title
-      t.datetime :date
-      t.integer :photo_id
-      t.text :blurb
+      t.datetime :start_at
+      t.datetime :end_at
+      t.string :venue_name
+      t.string :venue_address
+      t.decimal :ticket_price, :precision => 8, :scale => 2
+      t.string :ticket_link
+      t.text :description
+      t.boolean :featured
+      t.integer :image_id
       t.integer :position
 
       t.timestamps
